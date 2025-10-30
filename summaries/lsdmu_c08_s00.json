@@ -21,5 +21,18 @@
   "notes": "Editorially, this section reframes the protagonist from sufferer to conduit, inaugurating the book’s final movement where personal insight becomes collective blessing.",
   "model": "gpt-5",
   "words_target": 400,
-  "src_dir": "reflowed_text"
+  "src_dir": "reflowed_text",
+  "book_title": "LSD and the Mind of the Universe: Diamonds from Heaven",
+  "book_author": "Christopher M. Bache",
+  "author_wikidata_qid": "Q112496741",
+  "book_publication_year": 2019,
+  "isbn_13": "978-1-62055-970-3",
+  "isbn_10": "1-62055-970-6",
+  "edition": "1st edition (Inner Traditions, 2019)",
+  "book_id": "bache:lsdmu:2019",
+  "work_type": "book_section_summary",
+  "language": "en",
+  "schema_version": "1.1",
+  "source_corpus": "lsdmu-summaries-public",
+  "created_date": "2025-10-30"
 }
