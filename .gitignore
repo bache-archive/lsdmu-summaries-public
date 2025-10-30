@@ -1,0 +1,12 @@
+# general
+.DS_Store
+__pycache__/
+.venv/
+
+# archives
+*.tgz
+*.tar
+*.tar.gz
+.DS_Store
+.venv/
+public/

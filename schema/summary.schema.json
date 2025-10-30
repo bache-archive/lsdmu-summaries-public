@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/bache-archive/lsdmu-summaries-public/schema/summary.schema.json",
+  "title": "LSDMU Section Summary",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "section_file": {
+      "type": "string",
+      "description": "Canonical source section filename this summary reflects.",
+      "pattern": "^lsdmu_(c\\d{2}_s\\d{2}|fm_s\\d{2}|apx\\d{2}_s\\d{2})\\.md$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "Human-readable section title chosen by the summarizer."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 100,
+      "description": "Abstractive synthesis (~400 words) in new language."
+    },
+    "keywords": {
+      "type": "array",
+      "description": "Topical tags drawn from the section’s ideas.",
+      "items": { "type": "string", "minLength": 2, "maxLength": 40 },
+      "minItems": 1,
+      "maxItems": 12,
+      "uniqueItems": true
+    },
+    "concept_links": {
+      "type": "array",
+      "description": "Optional internal concept handles (snake_case).",
+      "items": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+      "minItems": 0,
+      "maxItems": 20,
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional editorial remarks for maintainers."
+    },
+    "model": {
+      "type": "string",
+      "minLength": 1,
+      "description": "LLM or author identifier used to produce the summary (e.g., 'gpt-5')."
+    },
+    "words_target": {
+      "type": "integer",
+      "minimum": 200,
+      "maximum": 1200,
+      "description": "Nominal target word count (centered around ~400)."
+    },
+    "src_dir": {
+      "type": "string",
+      "description": "Optional logical source directory label.",
+      "default": "reflowed_text"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Optional ISO8601 timestamp of summary creation."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^v?\\d+(\\.\\d+)*$",
+      "description": "Optional local version tag for the summary record."
+    }
+  },
+  "required": ["section_file", "title", "summary", "keywords", "model", "words_target"]
+}

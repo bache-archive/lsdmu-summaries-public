@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use the LSDMU Summarization Corpus, please cite it as below."
+title: "LSDMU Summarization Corpus: Section-Level Syntheses of *LSD and the Mind of the Universe*"
+authors:
+  - name: "Bache Archive Project"
+    affiliation: "bache-archive.github.io"
+abstract: >
+  A public-domain corpus of section-level abstractive summaries derived from
+  Christopher M. Bache’s *LSD and the Mind of the Universe* (2019).
+  Each synthesis preserves the philosophical and spiritual integrity of the
+  original while providing a concise conceptual map for scholars, educators,
+  and intelligent systems. Released under CC0 1.0 Universal to advance
+  education and research in consciousness studies.
+license: "CC0-1.0"
+repository-code: "https://github.com/bache-archive/lsdmu-summaries-public"
+url: "https://github.com/bache-archive/lsdmu-summaries-public"
+version: "v1.0"
+date-released: "2025-10-30"
+keywords:
+  - Christopher M. Bache
+  - LSD and the Mind of the Universe
+  - consciousness studies
+  - psychedelics
+  - transpersonal philosophy
+  - species mind
+  - diamond luminosity
+  - educational dataset
+  - semantic graph
+preferred-citation:
+  type: dataset
+  authors:
+    - name: "Bache Archive Project"
+  title: "LSDMU Summarization Corpus"
+  version: "v1.0"
+  year: 2025
+  url: "https://github.com/bache-archive/lsdmu-summaries-public"
