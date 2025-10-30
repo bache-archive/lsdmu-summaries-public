@@ -7,3 +7,6 @@ __pycache__/
 *.tgz
 *.tar
 *.tar.gz
+.DS_Store
+.venv/
+public/
