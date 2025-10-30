@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/bache-archive/lsdmu-summaries-public/schema/registry.schema.json",
+  "title": "LSDMU Registry",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["file", "section_file", "title", "chapter", "section", "words_target"],
+    "additionalProperties": false,
+    "properties": {
+      "file": { "type": "string", "pattern": "^lsdmu_(c\\d{2}|fm|apx\\d{2})_s\\d{2}\\.json$" },
+      "section_file": { "type": "string", "pattern": "^lsdmu_(c\\d{2}_s\\d{2}|fm_s\\d{2}|apx\\d{2}_s\\d{2})\\.md$" },
+      "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+      "chapter": { "type": "integer", "minimum": 0 },
+      "section": { "type": "integer", "minimum": 0 },
+      "words_target": { "type": "integer", "minimum": 200, "maximum": 1200 }
+    }
+  }
+}
