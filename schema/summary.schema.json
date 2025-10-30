@@ -49,7 +49,7 @@
     "words_target": {
       "type": "integer",
       "minimum": 200,
-      "maximum": 800,
+      "maximum": 1200,
       "description": "Nominal target word count (centered around ~400)."
     },
     "src_dir": {
