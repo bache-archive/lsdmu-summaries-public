@@ -1,0 +1,9 @@
+# general
+.DS_Store
+__pycache__/
+.venv/
+
+# archives
+*.tgz
+*.tar
+*.tar.gz
