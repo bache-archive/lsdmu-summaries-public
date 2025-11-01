@@ -90,3 +90,9 @@ Released under CC0 1.0 Universal — Public Domain Dedication￼
 
 These summaries are freely available for any purpose — scholarly, educational, or creative — in gratitude for the light they help transmit.
 
+
+
+---
+All Wikidata QIDs and identifiers in this repository are maintained in the canonical registry:
+[bache-archive-meta](https://github.com/bache-archive/bache-archive-meta)
+
